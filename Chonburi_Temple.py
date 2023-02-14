@@ -16,7 +16,7 @@ RegularExpression_pattern_ProvinceName = r'รายชื่อวัดใน(
 ProvinceName = re.search(
     RegularExpression_pattern_ProvinceName, content_for_ProvinceName)
 ProvinceName = ProvinceName.group(1)
-print(ProvinceName)
+# print(ProvinceName)
 '''
 - search เช็คทั้งหมดและเก็บทั้งหมดแม้อยู่นอกวงเล็บ , ภายในวงเล็บ คือ group --> วงเล็บแรกเป็น group(1) ,วงเล็บต่อมาเป็น group(2) , group(3) , ... , group(n)
     เลือกเก็บ/แสดง เฉพาะ group ได้
